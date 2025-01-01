@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -90,7 +91,7 @@ body {
   background-color: red;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffff;
-  font-weight: 500px;
+  font-weight: 500;
   text-decoration: underline;
   outline: solid 2rex rosybrown;
   text-transform: lowercase;
@@ -110,9 +111,6 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: line-through;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ralewaydots/v18/6NUR8FifJg6AfQvzpshgwJ8UwPVERtw.woff2)
-    format("woff2");
   color: burlywood;
   background-color: blueviolet;
 }
@@ -121,25 +119,17 @@ body {
 
 .theTLetter {
   font-family: "Inter", serif;
-  font-optical-sizing: auto;
   color: coral;
   background-color: #00ff40;
   font-style: normal;
 }
 
-.theHLetter {
+.theHLetter,
+.theELetter {
   text-decoration: overline;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: italic;
-  background-color: #ff0000;
-}
-
-.theELetter {
-  text-decoration: overline;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
-  color: #ffff00;
   background-color: #ff0000;
 }
 
@@ -155,7 +145,6 @@ body {
 
 .frontendRLetter {
   font-family: "Inter", serif;
-  font-optical-sizing: auto;
   color: coral;
   background-color: #00ff40;
   font-style: normal;
@@ -167,6 +156,7 @@ body {
   text-transform: uppercase;
   color: #0080ff;
   background-color: #ffff;
+  text-shadow: 0 0 3px plum;
 }
 
 .frontendNLetter {
@@ -227,7 +217,6 @@ body {
 }
 .developerVLetter {
   text-decoration: line-through;
-  text-decoration-thickness: solid blue;
   color: burlywood;
   background-color: brown;
 }
@@ -238,22 +227,17 @@ body {
   background-color: aliceblue;
   text-transform: uppercase;
 }
-.developerLLetter {
+.developerLLetter,
+.developerOLetter {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: oblique;
-  background-color: darkblue;
+  background-image: linear-gradient(darkblue, tomato);
   color: antiquewhite;
-}
-.developerOLetter {
-  font-family: cursive;
-  font-display: block;
   font-style: italic;
-  background-color: #99ffcc;
   text-transform: uppercase;
 }
 .developerPLetter {
   text-overflow: clip;
-  font-stretch: narrower;
   background-color: #b2f299;
   color: #006666;
 }
@@ -281,10 +265,9 @@ body {
   padding: 1rem;
   outline-offset: 0.5rem;
 }
-.takeALetter {
-  background-color: darkgrey;
-}
+.takeALetter,
 .takeKLetter {
+  background-color: darkgrey;
   outline: 1rem solid purple;
 }
 .takeELetter {
@@ -315,32 +298,28 @@ body {
   color: rgb(218, 165, 32);
   text-transform: uppercase;
   font-style: italic;
-  font-weight: 700px;
+  font-weight: 700;
   background-color: #eee8aa;
 }
-.gardeningALetter {
+.gardeningALetter,
+.gardeningRLetter {
   font-family: Monospace;
   text-decoration: underline;
   text-transform: lowercase;
   font-style: oblique;
   background-color: #008080;
-}
-.gardeningRLetter {
   font-variant: small-caps;
   text-decoration: overline 3px wavy purple;
   outline: 1rem dotted dodgerblue;
 }
-.gardeningDLetter {
+.gardeningDLetter,
+.gardeningELetter {
   background-color: blueviolet;
   color: #0080ff;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
-.gardeningELetter {
-  text-decoration: line-through;
-  outline: 4px solid red;
-  background-color: #8fbc8f;
-}
+
 .gardeningNLetter {
   font-style: italic;
   text-overflow: ellipsis;
@@ -349,10 +328,9 @@ body {
 }
 .gardeningILetter {
   text-transform: uppercase;
-  font-stretch: narrower;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #bf0040;
-  background-color: #708090;
+  background-image: linear-gradient(blueviolet, red);
 }
 .gardeningNTwoLetter {
   font-style: italic;
@@ -381,12 +359,11 @@ body {
   color: rgb(218, 165, 32);
   text-transform: uppercase;
   font-style: italic;
-  font-weight: 700px;
+  font-weight: 700;
   background-color: #eee8aa;
 }
 .becauseCLetter {
   font-family: cursive;
-  font-display: block;
   font-style: italic;
   background-color: #99ffcc;
   text-transform: uppercase;
@@ -401,7 +378,7 @@ body {
   background-color: red;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffff;
-  font-weight: 500px;
+  font-weight: 500;
   text-decoration: underline;
   text-transform: lowercase;
 }
@@ -424,7 +401,7 @@ body {
 /* THEY word */
 
 .theyTLetter {
-  text-decoration: double wavy wheat;
+  text-decoration: double wheat;
   font-weight: bold;
   background-color: #bc8f8f;
   color: #dda0dd;
@@ -518,7 +495,7 @@ body {
 }
 .improveMLetter {
   color: hwb(0.25turn 0% 40% / 50%);
-  text-shadow: #6b8e23;
+  text-shadow: 0 0 3px blue;
   background-color: wheat;
 }
 .improvePLetter {
@@ -537,7 +514,7 @@ body {
   background-color: hsl(30.2 100% 50% / 60%);
 }
 .improveOLetter {
-  text-decoration: double wavy wheat;
+  text-decoration: dashed wheat;
   font-weight: bold;
   background-color: #bc8f8f;
   color: #dda0dd;
@@ -575,9 +552,10 @@ body {
 }
 .theirELetter {
   text-decoration: overline;
-  color: hwb(90deg 10% 10%);
+  color: black;
   font-weight: bold;
   text-transform: uppercase;
+  background-image: linear-gradient(#7fffd4, #7fff00);
 }
 .theirILetter {
   text-decoration: underline dashed navy;
@@ -604,7 +582,7 @@ body {
 .rootOLetter {
   font-family: fangsong;
   font-weight: bold;
-  background-color: #ff7800;
+  background-image: linear-gradient(blueviolet, pink);
   color: #282a56;
 }
 .rootOTwoLetter {
@@ -639,7 +617,6 @@ body {
 .skillsILetter {
   text-transform: uppercase;
   text-overflow: clip;
-  font-stretch: narrower;
   background-color: #b2f299;
   color: #006666;
 }
